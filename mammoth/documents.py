@@ -53,6 +53,8 @@ class Run(HasChildren):
     vertical_alignment = cobble.field()
     font = cobble.field()
     font_size = cobble.field()
+    highlight = cobble.field()
+    color = cobble.field()
 
 @cobble.data
 class Text(Element):
@@ -128,6 +130,8 @@ def run(
     vertical_alignment=None,
     font=None,
     font_size=None,
+    color=None,
+    highlight=None
 ):
     if vertical_alignment is None:
         vertical_alignment = VerticalAlignment.baseline
@@ -144,6 +148,8 @@ def run(
         vertical_alignment=vertical_alignment,
         font=font,
         font_size=font_size,
+        color=color,
+        highlight=highlight
     )
 
 class VerticalAlignment(object):
