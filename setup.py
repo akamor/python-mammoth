@@ -8,8 +8,8 @@ def read(fname):
 
 
 setup(
-    name='mammoth',
-    version='1.6.0',
+    name='mammoth-tonic-fork',
+    version='1.0.0',
     description='Convert Word documents from docx to simple and clean HTML and Markdown',
     long_description=read("README"),
     author='Michael Williamson',
